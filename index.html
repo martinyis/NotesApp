@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Notes App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Manrope:500,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:500,600,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:500,600,"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container"></div>
+    </header>
+    <main class="page">
+      <div class="notelist">
+        <div class="notelist__container">
+          <h1 class="notelist__title">Notes</h1>
+          <form action="" class="notelist__find">
+            <input
+              placeholder="Find your notes"
+              type="text"
+              class="notelist__search"
+            />
+            <img class="notelist__icon" src="img/search.png" alt="" />
+          </form>
+          <div class="notelist__body"></div>
+          <div class="notelist__add">
+            <img src="img/add.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div data-id="" class="note hidden">
+        <div class="note__container">
+          <h2 class="note__title notename">Untitled</h2>
+          <div class="note__body">
+            <form action="" class="note__box">
+              <textarea
+                placeholder="Untitled"
+                name="name"
+                id=""
+                cols="30"
+                rows="10"
+                class="note__name"
+              ></textarea>
+              <textarea
+                placeholder="Contant"
+                name="contant"
+                id=""
+                cols="30"
+                rows="10"
+                class="note__contant"
+              ></textarea>
+            </form>
+          </div>
+          <div class="note__back">
+            <img src="img/arrow.png" alt="" />
+          </div>
+          <div class="note__plus">
+            <img src="img/plus.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container"></div>
+    </footer>
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/noteInfo.js"></script>
+    <script type="module" src="js/renderNote.js"></script>
+    <script type="module" src="js/findNote.js"></script>
+  </body>
+</html>
