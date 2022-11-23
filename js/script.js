@@ -103,4 +103,4 @@ seeNote();
 changeView(doneBtn);
 changeView(plusBtn);
 preventDefault(nameArea);
-// localStorage.clear();
+localStorage.clear();
